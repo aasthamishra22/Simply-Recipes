@@ -135,6 +135,7 @@ ul {
   width: 100%;
   display: block;
   object-fit: cover;
+  border: 1.5px solid var(--primary-700);
 }
 
 /* buttons */
@@ -539,4 +540,32 @@ nav-link:hover {
 }
 .error-page h1{
   font-size: 9rem;
+}
+
+.featured-title{
+  text-align: center;
+}
+.about-page h2{
+  text-transform: none;
+  font-weight: bold;
+
+}
+.about-page{
+  display:grid;
+  gap: 2rem 4rem;
+  padding-bottom: 3rem;
+}
+.about-img{
+  border-radius: var(--borderRadius);
+  height: 400px;
+}
+@media screen and (min-width: 992px) {
+  .about-page{
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 400px;
+    align-items: center;
+  }
+  .about-img{
+    height: 100%;
+  }
 }
