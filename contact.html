@@ -1,35 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact Page</title>
-    <!-- favicon -->
-    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
-    <!-- normalize -->
-    <link rel="stylesheet" href="./css/normalize.css" />
-    <!-- font-awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
-    />
-    <!-- main css -->
-    <link rel="stylesheet" href="./css/main.css" />
-  </head>
-  <body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Page</title>
+  <!-- favicon -->
+  <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
+  <!-- normalize -->
+  <link rel="stylesheet" href="./css/normalize.css" />
+  <!-- font-awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+  <!-- main css -->
+  <link rel="stylesheet" href="./css/main.css" />
+</head>
+
+<body>
   <!-- nav -->
-   <nav class="navbar">
+  <nav class="navbar">
     <div class="nav-center">
       <!-- header -->
-       <div class="nav-header">
+      <div class="nav-header">
         <a href="index.html" class="nav-logo"><img src="./assets/logo.svg" alt="Simply Recipes"></a>
         <button type="button" class="btn nav-btn">
           <i class="fas fa-align-justify"></i>
         </button>
-       </div>
-       <!-- links -->
-       <div class="nav-links">
+      </div>
+      <!-- links -->
+      <div class="nav-links">
         <a href="index.html" class="nav-link">Home</a>
         <a href="about.html" class="nav-link">About</a>
         <a href="tags.html" class="nav-link">Tags</a>
@@ -37,24 +36,71 @@
         <div class="nav-link contact-link">
           <a href="contact.html" class="btn">Contact Us</a>
         </div>
-       </div>
+      </div>
     </div>
-   </nav>
-   <!-- end of nav -->
-    <!-- main -->
-     <main class="page">
-      <h1>Contact page</h1>
-     </main>
-     <!-- end of main -->
+  </nav>
+  <!-- end of nav -->
+  <!-- main -->
+  <main class="page">
+    <section class="contact-page">
+      <article>
+        <h2>
+          Want to get in Touch?
+        </h2>
+        <p>Whether you have a question, a suggestion, or just want to share how a recipe turned out, we'd love to hear
+          from you. This space is built on connection, and your voice makes it richer.</p>
+        <p>Feel free to reach out for collaborations, feedback, or even a friendly chat about food. I’m always open to
+          ideas that make this kitchen more welcoming and delicious.</p>
+        <p>Let’s stay in touch—because good food is even better when shared.</p>
+      </article>
+      <div class="contact-form">
+        <form action="">
+          <label for="name">Your Name:</label>
+          <input type="text" placeholder="Enter Name">
+          <label for="message">Your Message:</label>
+          <textarea id="message" name="message" rows="6" cols="50" placeholder="Write your thoughts here..."></textarea>
+          <input type="submit" class="btn">
+        </form>
+      </div>
+    </section>
+    <section class="featured-recipes">
+      <h5 class="featured-title" style="font-weight: bold;">
+        Savour the Flavours
+      </h5>
+      <!-- Recipes List -->
+      <div class="recipes-list">
+        <!-- Single Recipe -->
 
-     <!-- footer -->
-      <footer class="page-footer">
-        <p> &copy; <span id="date"></span>
-        <span class="footer-logo">SimplyRecipes</span>
-          Built by <a href="https://www.linkedin.com/in/aastha-mishra-7bb06a359/">Aastha Mishra</a>
-      </p>
-      </footer>
-      <!-- end of footer -->
-    <script src="./js/app.js"></script>
-  </body>
+        <a href="single-recipe.html" class="recipe">
+          <img src="assets/recipes/recipe-2.jpeg" alt="aloo parath" class="img recipe-img" />
+          <h5>Aloo Paratha</h5>
+          <p>Prep Time: 10mins | Cook Time: 10mins | Serves: 1</p>
+        </a>
+        <a href="single-recipe.html" class="recipe">
+          <img src="/assets/recipes/recipe-6.jpeg" alt="Masala Dosa" class="img recipe-img" />
+          <h5>Masala Dosa</h5>
+          <p>Prep Time: 20mins | Cook Time: 15mins | Serves: 2</p>
+        </a>
+        <a href="single-recipe.html" class="recipe">
+          <img src="/assets/recipes/recipe-8.jpeg" alt="Dal Makhani" class="img recipe-img" />
+          <h5>Dal Makhani</h5>
+          <p>Prep Time: 20mins | Cook Time: 45mins | Serves: 2</p>
+        </a>
+        <!-- End of Single Recipe -->
+      </div>
+    </section>
+  </main>
+  <!-- end of main -->
+
+  <!-- footer -->
+  <footer class="page-footer">
+    <p> &copy; <span id="date"></span>
+      <span class="footer-logo">SimplyRecipes</span>
+      Built by <a href="https://www.linkedin.com/in/aastha-mishra-7bb06a359/">Aastha Mishra</a>
+    </p>
+  </footer>
+  <!-- end of footer -->
+  <script src="./js/app.js"></script>
+</body>
+
 </html>

@@ -548,7 +548,6 @@ nav-link:hover {
 .about-page h2{
   text-transform: none;
   font-weight: bold;
-
 }
 .about-page{
   display:grid;
@@ -568,4 +567,37 @@ nav-link:hover {
   .about-img{
     height: 100%;
   }
+}
+
+.contact-page h2{
+  text-transform: none;
+  font-weight: bold;
+}
+.contact-page{
+  display:grid;
+  gap: 2rem 4rem;
+  padding-bottom: 3rem;
+}
+.contact-form{
+  background-color: white
+  height: 400px;
+  /* width: auto; */
+  border: 2px solid var(--primary-700);
+  border-radius: var(--borderRadius);
+  display:flex;
+  j
+}
+@media screen and (min-width: 992px) {
+  .contact-page{
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 400px;
+    align-items: center;
+  }
+  .contact-form{
+    height: 100%;
+  }
+}
+.contact-form label{
+  font-weight: bold;
+  display: flex;
 }
